@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="memento" t="IncludeRecursive">
+        <e p="memento.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="observer" t="IncludeRecursive">
+        <e p="observer.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="state" t="IncludeRecursive">
+        <e p="state.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="strategy" t="IncludeRecursive">
+        <e p="strategy.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="template" t="IncludeRecursive">
+        <e p="template.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="visitor" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CssClassVisitor.cs" t="Include" />
+        <e p="HtmlElement.cs" t="Include" />
+        <e p="HtmlParentElement.cs" t="Include" />
+        <e p="HtmlTag.cs" t="Include" />
+        <e p="IElement.cs" t="Include" />
+        <e p="IVisitor.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="visitor.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="StyleVisitor.cs" t="Include" />
+        <e p="TestVisitorPattern.cs" t="Include" />
+        <e p="visitor.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="worksheet-nine-behavioural-design-patterns.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_worksheet-nine-behavioural-design-patterns.-778857561.00" t="ExcludeRecursive" />
+  </component>
+</project>
