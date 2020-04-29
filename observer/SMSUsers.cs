@@ -1,25 +1,36 @@
+using System;
+
 namespace observer
 {
     public class SMSUsers : IObserver
     {
+        ISubject Subject { get; set; }
+        string Name { get; set; }
         public SMSUsers(ISubject subject, string s)
         {
-            throw new System.NotImplementedException();
+            Subject = subject;
+            Name = s;
         }
 
         public void Update(string desc)
+
         {
-            throw new System.NotImplementedException();
+         
+            Console.WriteLine($"{Name}: {desc}") ;
+            
         }
 
         public void Subscribe()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"Subscribing {Name} to {Subject.SubjectDetails()}");
+            Subject.SubscribeObserver(this);   
+
         }
 
         public void UnSubscribe()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"Unsubscribing {Name} to {Subject.SubjectDetails()}");
+            Subject.UnSubscribeObserver(this);
         }
     }
 }

@@ -8,3 +8,14 @@
 /Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/memento/obj/Debug/netcoreapp3.1/memento.AssemblyInfo.cs
 /Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/memento/obj/Debug/netcoreapp3.1/memento.dll
 /Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/memento/obj/Debug/netcoreapp3.1/memento.pdb
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.exe
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.deps.json
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.runtimeconfig.json
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.runtimeconfig.dev.json
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.dll
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\bin\Debug\netcoreapp3.1\memento.pdb
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\obj\Debug\netcoreapp3.1\memento.csprojAssemblyReference.cache
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\obj\Debug\netcoreapp3.1\memento.AssemblyInfoInputs.cache
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\obj\Debug\netcoreapp3.1\memento.AssemblyInfo.cs
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\obj\Debug\netcoreapp3.1\memento.dll
+C:\Users\nuche\OneDrive\Documents\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\memento\obj\Debug\netcoreapp3.1\memento.pdb

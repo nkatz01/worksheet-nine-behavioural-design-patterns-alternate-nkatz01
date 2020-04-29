@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/template/template.csproj": {}
+    "C:\\Users\\nuche\\OneDrive\\Documents\\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\\template\\template.csproj": {}
   },
   "projects": {
-    "/Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/template/template.csproj": {
+    "C:\\Users\\nuche\\OneDrive\\Documents\\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\\template\\template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/template/template.csproj",
+        "projectUniqueName": "C:\\Users\\nuche\\OneDrive\\Documents\\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\\template\\template.csproj",
         "projectName": "template",
-        "projectPath": "/Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/template/template.csproj",
-        "packagesPath": "/Users/keith/.nuget/packages/",
-        "outputPath": "/Users/keith/Documents/Courses/sdp-sp3/2020/worksheet-nine-behavioural-design-patterns/template/obj/",
+        "projectPath": "C:\\Users\\nuche\\OneDrive\\Documents\\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\\template\\template.csproj",
+        "packagesPath": "C:\\Users\\nuche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nuche\\OneDrive\\Documents\\worksheet-nine-behavioural-design-patterns-alternate-nkatz01\\template\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/keith/.config/NuGet/NuGet.Config"
+          "C:\\Users\\nuche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

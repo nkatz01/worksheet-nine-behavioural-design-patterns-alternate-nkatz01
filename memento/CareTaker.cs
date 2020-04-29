@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace worksheet_nine_behavioural_design_patterns
@@ -6,10 +7,23 @@ namespace worksheet_nine_behavioural_design_patterns
     {
         private Dictionary<string, Memento> _savepointStorage = new Dictionary<string, Memento>();
 
-        public void SaveMemento(Memento memento, string savepointName) => throw new System.NotImplementedException();
+        public void SaveMemento(Memento memento, string savepointName)
+        {
 
-        public Memento Memento(string savepointName) => throw new System.NotImplementedException();
+            _savepointStorage.Add(savepointName, memento);
+        }
 
-        public void ClearSavePoints() => throw new System.NotImplementedException();
+        public Memento Memento(string savepointName) {
+
+            Memento memento; 
+            _savepointStorage.TryGetValue(savepointName, out memento);
+            return memento;  
+        }
+
+        public void ClearSavePoints()
+        {
+            _savepointStorage.Clear();
+            Console.WriteLine("Clearing all save points...");
+        }
     }
 }

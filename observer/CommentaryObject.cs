@@ -3,33 +3,59 @@ using System.Collections.Generic;
 
 namespace observer
 {
+     
     public class CommentaryObject : ISubject, ICommentary
     {
+        private List<IObserver> Observers { get; set; }
+        
         public CommentaryObject(List<IObserver> observers, string s)
         {
-            throw new System.NotImplementedException();
+
+            subjectDetails = s ;
+            Observers = observers;
         }
 
         public void SubscribeObserver(IObserver observer)
         {
-            throw new System.NotImplementedException();
+           Observers.Add(observer);
+            Console.WriteLine("Subscribed successfully.");
         }
 
         public void UnSubscribeObserver(IObserver observer)
         {
-            throw new System.NotImplementedException();
+            if (Observers.Contains(observer))
+                Observers.Remove(observer);
+            Console.WriteLine("Unsubscribed successfully.");
+
         }
 
         public void NotifyObservers()
         {
-            throw new System.NotImplementedException();
+            foreach (IObserver obs in Observers) {
+                obs.Update(Description);
+            };
         }
 
         public string SubjectDetails()
         {
-            throw new System.NotImplementedException();
+            return subjectDetails;
         }
 
-        public string Description { get; set; }
+        public string Description
+        {
+            set
+            {
+
+                description = value;
+                NotifyObservers();
+            }
+            get
+            {
+                return description;
+            }
+        }
+        private string subjectDetails { get; }
+
+        private string  description ; 
     }
 }

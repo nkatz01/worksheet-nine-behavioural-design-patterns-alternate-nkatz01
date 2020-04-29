@@ -5,44 +5,59 @@ namespace worksheet_nine_behavioural_design_patterns
 {
     public class Originator
     {
+        private readonly CareTaker CareTaker;
         private string _lastUndoSavepoint;
         public double X { get; set; }
         public double Y { get; set; }
 
         public Originator(double x, double y, CareTaker careTaker)
         {
-            CreateSavePoint("INITIAL");
-            throw new System.NotImplementedException();
+            X = x;
+            Y = y;
+          CareTaker = careTaker;
+            CreateSavepoint("INITIAL");
+
         }
 
-        public void CreateSavePoint(string savepointName)
+        public void CreateSavepoint(string savepointName)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"Saving state... {savepointName}");
+          CareTaker.SaveMemento(new Memento(this.X, this.Y), savepointName);
+            _lastUndoSavepoint = savepointName;
         }
 
         public void Undo()
         {
-            throw new System.NotImplementedException();
+         Undo(_lastUndoSavepoint);
+            
         }
 
         public void Undo(string savepointName)
         {
+            Console.WriteLine($"Undo at... {savepointName}");
+            Memento memento = CareTaker.Memento(savepointName);
+            this.X = memento.X; 
+            this.Y = memento.Y;
+           
         }
 
         public void UndoAll()
         {
+             Undo("INITIAL");
+            CareTaker.ClearSavePoints();
+            CreateSavepoint("INITIAL");
+
+
         }
 
         private void OriginatorState(string savepointName)
         {
-            throw new System.NotImplementedException();
+          var m =  CareTaker.Memento(savepointName);
+            Console.WriteLine($"At savepoint {savepointName} the state of X was {m.X} and Y was {m.Y}");
         }
 
         public override string ToString() => $"X: {X}, Y: {Y}";
 
-        public void CreateSavepoint(string save1)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
