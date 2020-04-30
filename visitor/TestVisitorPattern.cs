@@ -34,24 +34,24 @@ namespace visitor
             IVisitor cssClass = new CssClassVisitor();
             IVisitor style = new StyleVisitor();
 
-            parentTag = new HtmlParentElement("<html>") {StartTag = "<html>", EndTag = "</html>"};
+            parentTag = new HtmlParentElement("<html>") { StartTag = "<html>", EndTag = "</html>" };
 
             parentTag.Accept(style);
             parentTag.Accept(cssClass);
 
-            p1 = new HtmlParentElement("<body>") {StartTag = "<body>", EndTag = "</body>"};
+            p1 = new HtmlParentElement("<body>") { StartTag = "<body>", EndTag = "</body>" };
             p1.Accept(style);
             p1.Accept(cssClass);
 
             parentTag.AddChildTag(p1);
 
-            child1 = new HtmlElement("<p>") {StartTag = "<p>", EndTag = "</p>", TagBody = "Testing html tag library"};
+            child1 = new HtmlElement("<p>") { StartTag = "<p>", EndTag = "</p>", TagBody = "Testing html tag library" };
             child1.Accept(style);
             child1.Accept(cssClass);
 
             p1.AddChildTag(child1);
 
-            child1 = new HtmlElement("<p>") {StartTag = "<p>", EndTag = "</p>", TagBody = "Paragraph 2"};
+            child1 = new HtmlElement("<p>") { StartTag = "<p>", EndTag = "</p>", TagBody = "Paragraph 2" };
             child1.Accept(style);
             child1.Accept(cssClass);
 

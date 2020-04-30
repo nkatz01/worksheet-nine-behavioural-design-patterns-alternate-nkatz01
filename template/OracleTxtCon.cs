@@ -1,20 +1,22 @@
+using System;
+
 namespace template
 {
     public class OracleTxtCon: ConnectionTemplate
     {
         public override void SetDBDriver()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("Setting Oracle DB drivers...");
         }
 
         public override void SetCredentials()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("Setting credentials for Oracle DB...");
         }
 
         public override void SetData()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("Setting up data from TXT file....");
         }
     }
 }

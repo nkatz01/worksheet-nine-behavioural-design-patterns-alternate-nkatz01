@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace visitor
 {
     public class HtmlElement : HtmlTag
@@ -16,7 +19,22 @@ namespace visitor
 
         public override void GenerateHtml()
         {
-            throw new System.NotImplementedException();
+           Console.Write(StartTag);
+            Console.Write(TagBody);
+            Console.Write(EndTag);
+            Console.WriteLine();
         }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
+        //public override List<HtmlTag> GetChildren()
+        //{
+        //    HtmlTag ob = new HtmlElement(this.TagName);
+        //   ob.StartTag = this.StartTag ;
+        //    ob.EndTag = this.EndTag;
+        //    return new List<HtmlTag>(ob );
+        //}
     }
 }

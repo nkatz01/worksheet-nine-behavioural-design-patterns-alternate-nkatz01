@@ -5,7 +5,7 @@ namespace template
 {
     public abstract class ConnectionTemplate
     {
-        public void Run()
+         public  void Run()
         {
             SetDBDriver();
             SetCredentials();
@@ -21,16 +21,16 @@ namespace template
 
         public abstract void SetCredentials();
 
-        public void Connect() => Console.WriteLine("Setting connection...");
+        public virtual void Connect() => Console.WriteLine("Setting connection...");
 
-        public void PrepareStatement() => Console.WriteLine("Preparing insert statement...");
+        public virtual void PrepareStatement() => Console.WriteLine("Preparing insert statement...");
 
         public abstract void SetData();
 
-        public void Insert() => Console.WriteLine("Inserting data...");
+        public virtual void Insert() => Console.WriteLine("Inserting data...");
 
-        public void Close() => Console.WriteLine("Closing connections...");
+        public virtual void Close() => Console.WriteLine("Closing connections...");
 
-        public void Destroy() => Console.WriteLine("Destroying connection objects...");
+        public virtual void Destroy() => Console.WriteLine("Destroying connection objects...");
     }
 }

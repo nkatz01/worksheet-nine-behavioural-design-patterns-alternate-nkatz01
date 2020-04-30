@@ -9,6 +9,7 @@ namespace template
             Console.WriteLine("For MYSQL....");
             ConnectionTemplate template = new MySqLCSVCon();
             template.Run();
+            Console.WriteLine();
             Console.WriteLine("For Oracle...");
             template = new OracleTxtCon();
             template.Run();

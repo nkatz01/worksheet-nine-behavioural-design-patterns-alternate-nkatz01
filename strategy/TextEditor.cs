@@ -11,7 +11,7 @@ namespace strategy
 
         public void PublishText(string text)
         {
-            throw new System.NotImplementedException();
+           TextFormatter.Format(text);
         }
     }
 }

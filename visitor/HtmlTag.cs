@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace visitor
 {
-    public abstract class HtmlTag
+    public abstract class HtmlTag : IElement
     {
         public abstract string TagName { get; set; }
 
@@ -28,5 +28,7 @@ namespace visitor
         }
 
         public abstract void GenerateHtml();
+
+        public abstract void Accept(IVisitor visitor);
     }
 }
