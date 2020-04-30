@@ -3,21 +3,22 @@ using System.Collections.Generic;
 
 namespace observer
 {
-     
+
     public class CommentaryObject : ISubject, ICommentary
     {
         private List<IObserver> Observers { get; set; }
-        
+
         public CommentaryObject(List<IObserver> observers, string s)
         {
 
-            subjectDetails = s ;
+            //   subjectDetails = s;
+            SubjectDetails = s;
             Observers = observers;
         }
 
         public void SubscribeObserver(IObserver observer)
         {
-           Observers.Add(observer);
+            Observers.Add(observer);
             Console.WriteLine("Subscribed successfully.");
         }
 
@@ -36,10 +37,10 @@ namespace observer
             };
         }
 
-        public string SubjectDetails()
-        {
-            return subjectDetails;
-        }
+        //public string SubjectDetails()
+        //{
+        //    return subjectDetails;
+        //}
 
         public string Description
         {
@@ -54,8 +55,10 @@ namespace observer
                 return description;
             }
         }
-        private string subjectDetails { get; }
+        public string SubjectDetails { get; }
 
-        private string  description ; 
+        private string description;
+
+     
     }
 }

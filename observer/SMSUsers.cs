@@ -22,14 +22,14 @@ namespace observer
 
         public void Subscribe()
         {
-            Console.WriteLine($"Subscribing {Name} to {Subject.SubjectDetails()}");
+            Console.WriteLine($"Subscribing {Name} to {Subject.SubjectDetails}");
             Subject.SubscribeObserver(this);   
 
         }
 
         public void UnSubscribe()
         {
-            Console.WriteLine($"Unsubscribing {Name} to {Subject.SubjectDetails()}");
+            Console.WriteLine($"Unsubscribing {Name} to {Subject.SubjectDetails}");
             Subject.UnSubscribeObserver(this);
         }
     }

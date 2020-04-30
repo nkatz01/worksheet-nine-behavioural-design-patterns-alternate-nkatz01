@@ -5,6 +5,6 @@ namespace observer
         public void SubscribeObserver(IObserver observer);
         public void UnSubscribeObserver(IObserver observer);
         public void NotifyObservers();
-        public string SubjectDetails();
+        public string SubjectDetails { get; }
     }
 }
