@@ -29,12 +29,14 @@ namespace visitor
         {
             visitor.Visit(this);
         }
-        //public override List<HtmlTag> GetChildren()
-        //{
-        //    HtmlTag ob = new HtmlElement(this.TagName);
-        //   ob.StartTag = this.StartTag ;
-        //    ob.EndTag = this.EndTag;
-        //    return new List<HtmlTag>(ob );
-        //}
+        public override List<HtmlTag> GetChildren()
+        {
+            HtmlTag ob = new HtmlElement(this.TagName);
+            ob.StartTag = this.StartTag;
+            ob.EndTag = this.EndTag;
+            List<HtmlTag> ls = new List<HtmlTag>();
+            ls.Add(ob);
+            return ls;
+        }
     }
 }
